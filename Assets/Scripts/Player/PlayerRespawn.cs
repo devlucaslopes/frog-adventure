@@ -16,8 +16,8 @@ public class PlayerRespawn : MonoBehaviour
     }
 
     private void Respawn() {
-        OnAppearing?.Invoke();
         transform.position = CheckpointPosition.position;
+        OnAppearing?.Invoke();
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
